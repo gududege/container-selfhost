@@ -175,7 +175,7 @@ services:
   fast-note-sync-service:
     image: haierkeys/fast-note-sync-service:latest
     container_name: fast-note-sync-service
-    restart: unless-stopped
+    restart: always
     ports:
       - "9000:9000"  # RESTful API & WebSocket port (where /api/user/sync is the WebSocket interface address)
     volumes:

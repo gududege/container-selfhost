@@ -301,7 +301,7 @@ services:
   tao-sync:
     image: dr34m/tao-sync:latest
     container_name: taoSync
-    restart: unless-stopped
+    restart: always
     ports:
       - "8023:8023"
     volumes:
