@@ -7,7 +7,7 @@
     "latest_release_date": "2026-10-25",
     "status": "active",
     "description": "Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG) ",
-    "stars": 50058
+    "stars": 50059
   },
   "alist": {
     "repo": "https://github.com/alist-org/alist",
@@ -17,7 +17,7 @@
     "latest_release_date": "2026-10-21",
     "status": "active",
     "description": "🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。",
-    "stars": 50464
+    "stars": 50465
   },
   "ani-rss": {
     "repo": "https://github.com/wushuo894/ani-rss",
@@ -137,7 +137,7 @@
     "latest_release_date": "2026-10-23",
     "status": "active",
     "description": "🚀 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!",
-    "stars": 27012
+    "stars": 27013
   },
   "docker-proxy": {
     "repo": "https://github.com/dqzboy/Docker-Proxy",
@@ -197,7 +197,7 @@
     "latest_release_date": "2026-09-12",
     "status": "active",
     "description": "Proxy server to bypass Cloudflare protection",
-    "stars": 16255
+    "stars": 16256
   },
   "gitea": {
     "repo": "https://github.com/go-gitea/gitea",
@@ -207,7 +207,7 @@
     "latest_release_date": "2026-11-15",
     "status": "active",
     "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
-    "stars": 59137
+    "stars": 59138
   },
   "grafana": {
     "repo": "https://github.com/grafana/grafana",
@@ -247,7 +247,7 @@
     "latest_release_date": "2026-11-11",
     "status": "active",
     "description": "A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.",
-    "stars": 33709
+    "stars": 33710
   },
   "immich": {
     "repo": "https://github.com/immich-app/immich",
@@ -297,7 +297,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
-    "stars": 64520
+    "stars": 64519
   },
   "metatube": {
     "repo": "https://github.com/metatube-community/jellyfin-plugin-metatube",
@@ -317,7 +317,7 @@
     "latest_release_date": "2026-11-11",
     "status": "active",
     "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
-    "stars": 35858
+    "stars": 35859
   },
   "music-tag": {
     "repo": "https://github.com/xhongc/music-tag-web",
@@ -387,7 +387,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Send push notifications to your phone or desktop using PUT/POST",
-    "stars": 35613
+    "stars": 35614
   },
   "obsidian": {
     "repo": "https://github.com/Nystik-gh/ignis",
@@ -437,7 +437,7 @@
     "latest_release_date": "2025-02-24",
     "status": "active",
     "description": "PairDrop: Transfer Files Cross-Platform. No Setup, No Signup.",
-    "stars": 11833
+    "stars": 11834
   },
   "portainer": {
     "repo": "https://github.com/portainer/portainer",
@@ -497,7 +497,7 @@
     "latest_release_date": "2026-11-09",
     "status": "active",
     "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
-    "stars": 129873
+    "stars": 129878
   },
   "semaphore": {
     "repo": "https://github.com/semaphoreui/semaphore",
