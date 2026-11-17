@@ -1,0 +1,41 @@
+services:
+  guacd:
+    image: dushixiang/guacd:latest
+    volumes:
+      - ./data:/usr/local/next-terminal/data
+    networks:
+      - all-connection
+    restart: unless-stopped
+  next-terminal:
+    image: dushixiang/next-terminal:latest
+    container_name: next-terminal
+    ports:
+      - 8088:8088 # NT的Web访问端口
+      #- 8099:8099 # 安全网关与服务端通信的端口（不需要可以删除）
+      - 2022:2022 # SSH Server 的端口 （不需要可以删除）
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./data:/usr/local/next-terminal/data
+      - ./config.yaml:/etc/next-terminal/config.yaml
+    networks:
+      - all-connection
+      - default
+    depends_on:
+      - guacd
+      - postgresql
+    restart: unless-stopped
+  postgresql:
+    container_name: postgresql
+    image: postgres:16.4
+    environment:
+      POSTGRES_DB: next-terminal
+      POSTGRES_USER: next-terminal
+      POSTGRES_PASSWORD: next-terminal
+    volumes:
+      - ./data/postgresql:/var/lib/postgresql/data
+    networks:
+      - default
+    restart: unless-stopped
+networks:
+  all-connection:
+    external: true

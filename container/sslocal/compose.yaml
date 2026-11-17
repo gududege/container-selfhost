@@ -1,0 +1,21 @@
+services:
+  sslocal:
+    image: ghcr.io/shadowsocks/sslocal-rust:latest
+    container_name: sslocal
+    ports:
+      - 11080:11080/tcp
+      - 11081:11081/tcp
+    volumes:
+      - ${ENV_DIR_CONFIG:-./config}:/etc/shadowsocks-rust
+    command:
+      - sh
+      - -c
+      - sslocal --log-without-time -a nobody -c /etc/shadowsocks-rust/config.json
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

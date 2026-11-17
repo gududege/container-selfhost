@@ -1,0 +1,26 @@
+services:
+  portainer-ce:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    hostname: portainer
+    environment:
+      - TZ=Asia/Shanghai
+      - HOST_OS=Unraid
+      - HOST_CONTAINERNAME=Portainer-CE
+      - HOST_HOSTNAME=hostname
+      - TRUSTED_ORIGINS=https://hostname
+    volumes:
+      - ${ENV_DIR_DATA:-./data}:/data:rw
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+    ports:
+      - 8000:8000
+      - 9000:9000
+      - 9996:9996
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

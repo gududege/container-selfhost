@@ -1,0 +1,25 @@
+services:
+  duplicati:
+    container_name: duplicati
+    image: lscr.io/linuxserver/duplicati:latest
+    hostname: duplicati
+    environment:
+      - PUID=0
+      - PGID=0
+      - CLI_ARGS= #optional
+      - TZ=Asia/Shanghai
+      - LANGUAGE=ch_ZN.UTF-8
+    volumes:
+      - ${ENV_DIR_BACKUPS}:/backups
+      - ./config:/config
+    privileged: true
+    ports:
+      - 8200:8200
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

@@ -1,0 +1,248 @@
+<p align="right">
+   <strong>中文</strong> | <a href="./README.en.md">English</a>
+</p>
+
+<div style="text-align: center">
+  <p align="center">
+  <img src="./hubcmdui/src/public/images/docker-proxy.svg" width="200px" height="200px" alt="Docker Proxy Logo">
+      <br>
+      <i>自建Docker镜像加速服务，一键部署Docker、K8s、Quay、Ghcr、Mcr、elastic、nvcr等镜像加速\管理服务.</i>
+  </p>
+</div>
+
+<div align="center">
+
+[![Auth](https://img.shields.io/badge/Auth-dqzboy-ff69b4)](https://github.com/dqzboy)
+[![GitHub contributors](https://img.shields.io/github/contributors/dqzboy/Docker-Proxy)](https://github.com/dqzboy/Docker-Proxy/graphs/contributors)
+[![GitHub Issues](https://img.shields.io/github/issues/dqzboy/Docker-Proxy.svg)](https://github.com/dqzboy/Docker-Proxy/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/stars/dqzboy/Docker-Proxy)](https://github.com/dqzboy/Docker-Proxy)
+[![HitCount](https://views.whatilearened.today/views/github/dqzboy/Docker-Proxy.svg)](https://github.com/dqzboy/Docker-Proxy)
+[![GitHub license](https://img.shields.io/github/license/dqzboy/Docker-Proxy)](https://github.com/dqzboy/Docker-Proxy/blob/main/LICENSE)
+
+📢 <a href="https://t.me/+ghs_XDp1vwxkMGU9" style="font-size: 15px;">交流群</a>  | [交流社区](https://www.dqzboy.com/community/)
+
+</div>
+
+---
+
+## 📝 准备工作
+⚠️  **重要**：选择一台国外服务器，并且未被墙。对于域名，无需进行国内备案。你也可以通过一些平台申请免费域名。在一键部署过程中，如果选择安装Caddy，它将自动配置HTTPS。若选择部署Nginx服务，则需要自行申请一个免费的SSL证书，或者通过其他方式来实现SSL加密。
+
+<details>
+<summary><strong>免费域名证书申请</strong></summary>
+<div>
+
+**方式一：** [Acme.sh自动生成和续订Lets Encrypt免费SSL证书](https://www.dqzboy.com/16437.html)
+
+**方式二：** 域名托管到[Cloudflare 开启免费SSL证书](https://www.cloudflare.com/zh-cn/application-services/products/ssl/)
+
+**方式三：** 可通过第三方平台，申请免费的域名证书(免费一般都为DV证书)，适用于个人网站、博客和小型项目
+
+</details>
+
+---
+
+## 🔨 功能
+- [x] **零磁盘缓存**：单进程按 `Host` 自动路由到各大公共仓库（`Docker Hub`、`GHCR`、`Quay`、`K8s`、`MCR`、`Elastic`、`NVCR` 等），服务端完成 token 鉴权并以流式转发，不落盘、不占用本地存储
+- [x] **一键部署**：交互式菜单一键完成「安装依赖 → 启动 Docker 镜像加速 →（可选）渲染 Nginx/Caddy 反代」
+- [x] **可选反代服务**：自动部署 Nginx 或 Caddy 反代，并渲染对应配置（HTTPS、Host 改写）
+- [x] **支持仓库账号认证**：可配置上游账号密码，由代理服务端换取 Bearer Token，从而拉取 `Docker Hub` 私有镜像并缓解官方限流
+- [x] **HubCMD-UI 管理面板**：网页端直接增删改代理、设置服务器参数并热重载；含镜像搜索、文档教程、容器管理、监控告警等
+- [x] **跨平台镜像**：支持主流 `linux/amd64`、`linux/arm64` 等系统架构的部署
+- [x] **系统看板**：实时监控服务器资源与容器运行状态、网络流量信息
+- [x] **日常运维管理**：提供服务启动 / 停止 / 重启 / 日志 / 更新 / 卸载等全生命周期管理
+- [x] **流量监控、告警**：提供服务器带宽吞吐量及镜像拉取的详细客户端侧流量指标、阈值监控告警
+- [x] **Registry 管理**：每个 Registry 独立配置管理，在线管理镜像代理（注册表）与服务设置，无需手动编辑配置文件
+- [x] **IP 访问控制**：IP 黑白名单，控制谁能通过本服务拉取镜像。支持单个 IP 与 CIDR 网段
+
+
+## 📦 部署
+
+### Docker 部署
+直接下载 [`docker-compose.yaml`](./docker-compose.yaml) 后运行：
+```bash
+docker compose up -d
+```
+
+
+### 一键部署脚本
+仓库内置 [`install/DockerProxy_Install.sh`](./install/DockerProxy_Install.sh)，交互式菜单一键完成「安装依赖 → 启动 Docker 镜像加速 →（可选）渲染 Nginx/Caddy 反代」。
+
+```shell
+# CentOS && RHEL && Rocky
+yum -y install curl
+# ubuntu && debian
+apt -y install curl
+
+# 国外环境
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/dqzboy/Docker-Proxy/main/install/DockerProxy_Install.sh)"
+
+# 国内环境cdn加速地址
+bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/dqzboy/Docker-Proxy/install/DockerProxy_Install.sh)"
+
+# 国内Github代理地址
+bash -c "$(curl -fsSL https://ghp.ci/https://raw.githubusercontent.com/dqzboy/Docker-Proxy/main/install/DockerProxy_Install.sh)"
+```
+
+> 脚本会自动：检查并安装 Docker / Docker Compose；生成随机 `GO_PROXY_ADMIN_TOKEN` 写入 `.env`；可选部署 Nginx / Caddy 反代。
+
+部署完成后访问 `http://<服务器IP>:30080/admin` 即可在网页管理代理与服务器参数
+
+### 配置持久化与升级（重要）
+配置文件挂载在宿主机 `./config/go-proxy/` 目录（容器内 `/app/config.d/config.yaml`）
+
+- 首次启动若宿主机还没有配置文件，容器会自动用镜像内置的默认配置初始化一份，无需手动创建。
+- 想恢复默认配置：删掉 `./config/go-proxy/config.yaml` 后重建容器即可重新播种。
+
+---
+
+## 💻 Hubcmd-UI
+
+- **默认账户**: `root` / `admin@123`  **部署后请及时修改默认账号和密码**
+
+<br/>
+<table>
+    <tr>
+      <td width="50%" align="center"><b>镜像加速</b></td>
+      <td width="50%" align="center"><b>镜像搜索</b></td>
+    </tr>
+    <tr>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmdui-images.png?raw=true"></td>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmdui-images-search.png?raw=true"></td>
+    </tr>
+    <tr>
+      <td width="50%" align="center"><b>Registry 管理</b></td>
+      <td width="50%" align="center"><b>Registry 配置</b></td>
+    </tr>
+    <tr>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmdui-go-config.png?raw=true"></td>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmdui-registry-manager.png?raw=true"></td>
+    </tr>
+    <tr>
+      <td width="50%" align="center"><b>系统看板</b></td>
+      <td width="50%" align="center"><b>流量监控</b></td>
+    </tr>
+    <tr>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmd-ui-dashboard.png?raw=true"></td>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmdui-Traffic.png?raw=true"></td>
+    </tr>
+    <tr>
+      <td width="50%" align="center"><b>访问控制</b></td>
+      <td width="50%" align="center"><b>网络测试</b></td>
+    </tr>
+    <tr>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmd-ui-ipaccess.png?raw=true"></td>
+        <td width="50%" align="center"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/hubcmdui-network-test.png?raw=true"></td>
+    </tr>
+</table>
+
+---
+
+## 🛠 本地开发
+
+面向参与二次开发、调试、或本地构建镜像的开发者。两个子项目（`go-proxy/` 和 `hubcmdui/`）**互相独立**，可单独跑起来。
+
+### go-proxy（Go 后端）
+
+**前置**：Go ≥ 1.23（`go-proxy/go.mod` 中明确要求 1.23.0）
+
+```bash
+cd go-proxy
+
+# 方式 A：自动发现当前目录下的 config.local.yaml > config.yaml > config.example.yaml
+go run .
+
+# 方式 B：显式指定配置文件
+go run . ./config.local.yaml
+```
+
+服务启动后：
+
+| 端口 | 用途 | 暴露范围 |
+| --- | --- | --- |
+| `:5000` | OCI Registry 反向代理（`/v2/` 主入口） | 公网 / 反代后 |
+| `:5001` | 管理 API（`/-/healthz`、`/-/config`、`/-/reload`、`/-/stats`、`/-/credentials`） | **仅内网** |
+
+> ⚠️ **关于 `GO_PROXY_ADMIN_TOKEN`**：管理 API 走的是独立 admin token 鉴权，且**启动期会强校验**——token 为占位符（`change-me` / `admin` / 空串等）或长度 < 16 会**直接拒绝启动**。本地开发至少临时设一个 16 位以上的随机值：
+>
+> ```bash
+> export GO_PROXY_ADMIN_TOKEN="$(openssl rand -hex 16)"
+> ```
+
+### hubcmdui（Web UI）
+
+**前置**：Node.js ≥ 18（推荐 20 LTS）
+
+```bash
+cd hubcmdui
+npm install
+
+# 启动开发服务
+npm run dev
+```
+
+服务默认监听 `:3000`，管理入口 `http://localhost:3000/admin`，默认账号 `root / admin@123`（**首次登录弹窗提醒改密**）
+
+---
+
+## 💌 推广
+
+<table>
+  <tr>
+    <td width="33.33%" align="center">
+      <a href="https://docker-proxy-desc.vercel.app/cloudcone.html"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/dqzboy-proxy/111.png?raw=true" alt="CloudCone" width="280" height="158"><br><strong>CloudCone</strong></a><br>
+      <sub>灵活按需付费的云服务器</sub>
+    </td>
+    <td width="33.33%" align="center">
+      <a href="https://docker-proxy-desc.vercel.app/dedione.html"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/dedione-vps.png?raw=true" alt="DediOne" width="280" height="158"><br><strong>DediOne</strong></a><br>
+      <sub>快速可靠的网站托管服务</sub>
+    </td>
+    <td width="33.33%" align="center">
+      <a href="https://docker-proxy-desc.vercel.app/dedirock.html"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/DediRock.png?raw=true" alt="DediRock" width="280" height="158"><br><strong>DediRock</strong></a><br>
+      <sub>美国多机房高性价比 VPS</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="33.33%" align="center">
+      <a href="https://www.krill-code.com/register?invite=LV6LTOYQFV"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/picture/krill-ai.png?raw=true" alt="AI Model API" width="280" height="158"><br><strong>AI 聚合</strong></a><br>
+      <sub> AI模型聚合中继平台：订阅套餐与按量计费</sub>
+    </td>
+    <td width="33.33%" align="center">
+      <a href="https://docker-proxy-desc.vercel.app/racknerd.html"><img src="https://cdn.jsdelivr.net/gh/dqzboy/Images/dqzboy-proxy/Image_2025-07-07_16-14-49.png?raw=true" alt="RackNerd" width="280" height="158"><br><strong>RackNerd</strong></a><br>
+      <sub>适合建站和 Docker服务的海外 VPS</sub>
+    </td>
+    <td width="33.33%"><!-- 新推广位 --></td>
+  </tr>
+</table>
+
+---
+
+<p align="center">
+  <strong>推广合作</strong><br>
+  仅接受长期稳定运营、信誉良好的商家<br>
+  <a href="https://t.me/RelayHubBot">Telegram</a> · <a href="mailto:support@dqzboy.com">support@dqzboy.com</a>
+</p>
+
+---
+
+## 🤝 参与贡献
+
+感谢所有做过贡献的人!
+
+<a href="https://github.com/dqzboy/Docker-Proxy/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dqzboy/Docker-Proxy" />
+</a>
+
+## ❤ 鸣谢
+感谢以下项目的开源的付出：
+
+项目参考了 [CNCF Distribution](https://distribution.github.io/distribution/) 的镜像代理设计思路。
+
+## License
+Docker-Proxy is available under the [Apache 2 license](./LICENSE)
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/chart?repos=dqzboy/Docker-Proxy&type=date&legend=top-left&sealed_token=SfUpnp7CeJMr2_b654YiehUQWQJAbzaTvdQFq8n-EjzvSN6Tl7n6XeO6NJ_ofFH0PIh0f1Toe_deHw_j31JlKL7LcFovwrmo75dW3KntbCxpEaoG8YibZA)](https://www.star-history.com/?repos=dqzboy%2FDocker-Proxy&type=date&legend=top-left)

@@ -1,0 +1,15 @@
+services:
+  swingmusic:
+    image: ghcr.io/swingmx/swingmusic
+    container_name: swingmusic
+    ports:
+      - 1971:1970
+    volumes:
+      - ${ENV_DIR_MUSIC:-./music}:/music
+      - ./config:/config
+    restart: unless-stopped
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

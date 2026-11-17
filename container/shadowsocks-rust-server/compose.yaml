@@ -1,0 +1,14 @@
+services:
+  ssserver:
+    image: ghcr.io/shadowsocks/ssserver-rust:latest
+    container_name: ssserver
+    volumes:
+      - ./config:/etc/shadowsocks-rust
+    command:
+      - sh
+      - -c
+      - ssserver --log-without-time -a nobody -c /etc/shadowsocks-rust/config.json
+    environment:
+      - ENV_SS_PASSWORD=password # ss password
+    network_mode: host
+    restart: unless-stopped

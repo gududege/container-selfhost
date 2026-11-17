@@ -1,0 +1,25 @@
+services:
+  dozzle:
+    container_name: dozzle
+    image: amir20/dozzle:latest
+    environment:
+      - DOZZLE_HOSTNAME=nas
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 8880:8080
+    networks:
+      - all-connection
+    restart: unless-stopped
+    healthcheck:
+      test:
+        - CMD
+        - /dozzle
+        - healthcheck
+      interval: 3s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+networks:
+  all-connection:
+    external: true

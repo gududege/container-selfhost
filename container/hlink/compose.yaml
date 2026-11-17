@@ -1,0 +1,20 @@
+services:
+  hlink:
+    container_name: hlink
+    image: likun7981/hlink:latest
+    hostname: hlink
+    environment:
+      - HLINK_HOME=/config
+    volumes:
+      - ${ENV_HOST_DIR}:/data
+      - ./config:/config
+    ports:
+      - 9090:9090
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

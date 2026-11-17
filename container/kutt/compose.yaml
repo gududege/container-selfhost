@@ -1,0 +1,20 @@
+services:
+  server:
+    image: kutt/kutt:latest
+    container_name: kutt
+    volumes:
+      - ./data:/var/lib/kutt
+    environment:
+      - DB_FILENAME=/var/lib/kutt/data.sqlite # 	File path for the SQLite database.
+      - JWT_SECRET=xxxxxxxxxxx # This is used to sign authentication tokens
+      - PORT=3101 # The port to start the app on
+      - DEFAULT_DOMAIN=example.com
+      - LINK_LENGTH=5 # The length of of shortened address
+    ports:
+      - 3101:3101
+    restart: unless-stopped
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

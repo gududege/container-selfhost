@@ -1,0 +1,21 @@
+services:
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    restart: unless-stopped
+    environment:
+      - TERM=linux
+      - GF_PLUGINS_PREINSTALL=grafana-clock-panel,grafana-polystat-panel
+    # if you are running as root then set it to 0
+    # else find the right id with the id -u command
+    user: "0"
+    ports:
+      - 9030:3000
+    # adding the mount volume point which we create earlier
+    volumes:
+      - ./data:/var/lib/grafana
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

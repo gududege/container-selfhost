@@ -1,0 +1,31 @@
+services:
+  auto_bangumi:
+    container_name: auto-bangumi
+    hostname: auto-bangumi
+    image: ghcr.io/estrellaxd/auto_bangumi:latest
+    environment:
+      - PGID=$(id -g)
+      - PUID=$(id -u)
+      - UMASK=022
+      - AB_DOWNLOADER_HOST=${ENV_DOWNLOADER_URL}
+      - AB_DOWNLOADER_USERNAME=${ENV_DOWNLOADER_USER}
+      - AB_DOWNLOADER_PASSWORD=${ENV_DOWNLOADER_PASSWORD}
+      - AB_DOWNLOAD_PATH=${ENV_DOWNLOAD_PATH}
+      - AB_RSS=${ENV_AB_RSS}
+    volumes:
+      - ./conifg:/app/config
+      - ./data:/app/data
+      - ${ENV_DIR_HOST_DOWNLOAD_PATH}:/downloads
+    dns:
+      - 8.8.8.8
+      - 114.114.114.114
+    ports:
+      - 7892:7892
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

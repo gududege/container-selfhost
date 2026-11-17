@@ -1,0 +1,652 @@
+{
+  "3x-ui": {
+    "repo": "https://github.com/MHSanaei/3x-ui",
+    "latest_tag": "v3.11.0",
+    "latest_tag_date": "2026-10-25",
+    "latest_release": "v3.11.0",
+    "latest_release_date": "2026-10-25",
+    "status": "active",
+    "description": "Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG) ",
+    "stars": 50058
+  },
+  "alist": {
+    "repo": "https://github.com/alist-org/alist",
+    "latest_tag": "v3.66.0",
+    "latest_tag_date": "2026-10-21",
+    "latest_release": "v3.66.0",
+    "latest_release_date": "2026-10-21",
+    "status": "active",
+    "description": "🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。",
+    "stars": 50464
+  },
+  "ani-rss": {
+    "repo": "https://github.com/wushuo894/ani-rss",
+    "latest_tag": "v3.2.61",
+    "latest_tag_date": "2026-11-15",
+    "latest_release": "v3.2.61",
+    "latest_release_date": "2026-11-15",
+    "status": "active",
+    "description": "基于RSS自动追番、订阅、下载、刮削、洗版",
+    "stars": 3594
+  },
+  "apprise": {
+    "repo": "https://github.com/caronc/apprise-api",
+    "latest_tag": "v2.1.0",
+    "latest_tag_date": "2026-11-08",
+    "latest_release": "v2.1.0",
+    "latest_release_date": "2026-11-08",
+    "status": "active",
+    "description": "A lightweight REST framework that wraps the Apprise Notification Library",
+    "stars": 1342
+  },
+  "auto-bangumi": {
+    "repo": "https://github.com/EstrellaXD/Auto_Bangumi",
+    "latest_tag": "stable",
+    "latest_tag_date": "2022-05-23",
+    "latest_release": "4.0.0",
+    "latest_release_date": "2026-10-24",
+    "status": "active",
+    "description": "AutoBangumi - 全自动追番工具",
+    "stars": 8329
+  },
+  "bark": {
+    "repo": "https://github.com/Finb/bark-server",
+    "latest_tag": "v2.4.0",
+    "latest_tag_date": "2026-11-06",
+    "latest_release": "v2.4.0",
+    "latest_release_date": "2026-11-06",
+    "status": "active",
+    "description": "Backend of Bark",
+    "stars": 3717
+  },
+  "calibre-web": {
+    "repo": "https://github.com/crocodilestick/Calibre-Web-Automated",
+    "latest_tag": "v4.0.8",
+    "latest_tag_date": "2026-09-28",
+    "latest_release": "v4.0.8",
+    "latest_release_date": "2026-09-28",
+    "status": "active",
+    "description": "Calibre-Web but Automated and with tons of New Features! Fully automate and simplify your eBook set up!",
+    "stars": 6630
+  },
+  "chinese-sub-finder": {
+    "repo": "https://github.com/ChineseSubFinder/ChineseSubFinder",
+    "latest_tag": "v0.55.3",
+    "latest_tag_date": "2023-12-01",
+    "latest_release": "v0.55.2",
+    "latest_release_date": "2023-11-09",
+    "status": "active",
+    "description": "自动化中文字幕下载。字幕网站支持 shooter、xunlei、arrst、a4k、SubtitleBest 。支持 Emby、Jellyfin、Plex、Sonarr、Radarr、TMM",
+    "stars": 3933
+  },
+  "cloudflared": {
+    "repo": "https://github.com/cloudflare/cloudflared",
+    "latest_tag": "2026.11.1",
+    "latest_tag_date": "2026-11-17",
+    "latest_release": "2026.11.1",
+    "latest_release_date": "2026-11-17",
+    "status": "active",
+    "description": "Cloudflare Tunnel client",
+    "stars": 16627
+  },
+  "code-server": {
+    "repo": "https://github.com/coder/code-server",
+    "latest_tag": "v4.145.2",
+    "latest_tag_date": "2026-11-06",
+    "latest_release": "v4.145.2",
+    "latest_release_date": "2026-11-07",
+    "status": "active",
+    "description": "VS Code in the browser",
+    "stars": 79896
+  },
+  "coder": {
+    "repo": "https://github.com/coder/coder",
+    "latest_tag": "v2.39.4",
+    "latest_tag_date": "2026-11-16",
+    "latest_release": "v2.38.10",
+    "latest_release_date": "2026-11-16",
+    "status": "active",
+    "description": "Secure environments for developers and their agents",
+    "stars": 17409
+  },
+  "cookiecloud": {
+    "repo": "https://github.com/easychen/CookieCloud",
+    "latest_tag": "v1.0.0",
+    "latest_tag_date": "2026-04-26",
+    "latest_release": "release-v1.0.4",
+    "latest_release_date": "2026-10-31",
+    "status": "active",
+    "description": "CookieCloud是一个和自架服务器同步浏览器Cookie和LocalStorage的小工具，支持端对端加密，可设定同步时间间隔。本仓库包含了插件和服务器端源码。CookieCloud is a small tool for synchronizing browser cookies and LocalStorage with a self-hosted server. It supports end-to-end encryption and allows for setting the synchronization interval. This repository contains both the plugin and the server-side source code",
+    "stars": 3228
+  },
+  "cypht": {
+    "repo": "https://github.com/cypht-org/cypht",
+    "latest_tag": "v2.14.0",
+    "latest_tag_date": "2026-11-06",
+    "latest_release": "v2.14.0",
+    "latest_release_date": "2026-11-06",
+    "status": "active",
+    "description": "Cypht: Lightweight Open Source webmail aggregator [PHP, JS].  Supports IMAP/SMTP, JMAP and EWS (Exchange Web Services)",
+    "stars": 1806
+  },
+  "dashy": {
+    "repo": "https://github.com/Lissy93/dashy",
+    "latest_tag": "4.9.19",
+    "latest_tag_date": "2026-11-16",
+    "latest_release": "4.9.0",
+    "latest_release_date": "2026-10-23",
+    "status": "active",
+    "description": "🚀 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!",
+    "stars": 27010
+  },
+  "docker-proxy": {
+    "repo": "https://github.com/dqzboy/Docker-Proxy",
+    "latest_tag": "v5.1.9",
+    "latest_tag_date": "2026-09-22",
+    "latest_release": "v5.1.9",
+    "latest_release_date": "2026-09-22",
+    "status": "active",
+    "description": "自建 Docker 镜像加速与管理服务。零磁盘缓存、可视化面板、支持上游账号认证，支持一键部署Docker、K8s、Quay、Ghcr、Mcr、elastic、nvcr等镜像加速",
+    "stars": 4462
+  },
+  "dozzle": {
+    "repo": "https://github.com/amir20/dozzle",
+    "latest_tag": "v11.4.3",
+    "latest_tag_date": "2026-11-13",
+    "latest_release": "v11.4.3",
+    "latest_release_date": "2026-11-13",
+    "status": "active",
+    "description": "Realtime log viewer for containers.  Supports Docker, Swarm and K8s. ",
+    "stars": 14951
+  },
+  "dsm": {
+    "repo": "https://github.com/vdsm/virtual-dsm",
+    "latest_tag": "v7.67",
+    "latest_tag_date": "2026-11-12",
+    "latest_release": "v7.67",
+    "latest_release_date": "2026-11-12",
+    "status": "active",
+    "description": "Virtual DSM in a Docker container.",
+    "stars": 4037
+  },
+  "duplicati": {
+    "repo": "https://github.com/linuxserver/docker-duplicati",
+    "latest_tag": "v2.4.1.0_stable_2026-10-29-ls318",
+    "latest_tag_date": "2026-11-14",
+    "latest_release": "v2.4.1.0_stable_2026-10-29-ls318",
+    "latest_release_date": "2026-11-14",
+    "status": "active",
+    "description": "",
+    "stars": 448
+  },
+  "filecodebox": {
+    "repo": "https://github.com/vastsa/FileCodeBox",
+    "latest_tag": "v2.9.0",
+    "latest_tag_date": "2026-11-16",
+    "latest_release": "v2.9.0",
+    "latest_release_date": "2026-11-16",
+    "status": "active",
+    "description": "文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件（FileCodeBox - File Express Cabinet - Anonymous Passcode Sharing Text, Files, Like Taking Express Delivery for Files）",
+    "stars": 8806
+  },
+  "flaresolverr": {
+    "repo": "https://github.com/FlareSolverr/FlareSolverr",
+    "latest_tag": "v3.5.2",
+    "latest_tag_date": "2026-09-12",
+    "latest_release": "v3.5.2",
+    "latest_release_date": "2026-09-12",
+    "status": "active",
+    "description": "Proxy server to bypass Cloudflare protection",
+    "stars": 16251
+  },
+  "gitea": {
+    "repo": "https://github.com/go-gitea/gitea",
+    "latest_tag": "v29.0.0-dev",
+    "latest_tag_date": "2026-09-29",
+    "latest_release": "v28.4.0",
+    "latest_release_date": "2026-11-15",
+    "status": "active",
+    "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
+    "stars": 59130
+  },
+  "grafana": {
+    "repo": "https://github.com/grafana/grafana",
+    "latest_tag": "vtest-new-release-pipeline",
+    "latest_tag_date": "2020-03-08",
+    "latest_release": "v13.3.1",
+    "latest_release_date": "2026-11-10",
+    "status": "active",
+    "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. ",
+    "stars": 77957
+  },
+  "halo": {
+    "repo": "https://github.com/halo-dev/halo",
+    "latest_tag": "v2.27.3",
+    "latest_tag_date": "2026-11-13",
+    "latest_release": "v2.27.3",
+    "latest_release_date": "2026-11-13",
+    "status": "active",
+    "description": "Halo 是一款强大易用的开源建站工具，从个人博客、知识库，到企业官网、在线商城，Halo 都能助您轻松实现，一站式满足您的多样化建站需求。",
+    "stars": 40316
+  },
+  "hlink": {
+    "repo": "https://github.com/likun7981/hlink",
+    "latest_tag": "v2.1.3",
+    "latest_tag_date": "2026-10-24",
+    "latest_release": "v2.1.3",
+    "latest_release_date": "2026-10-24",
+    "status": "active",
+    "description": "批量、快速硬链工具(The batch, fast hard link toolkit)",
+    "stars": 720
+  },
+  "homepage": {
+    "repo": "https://github.com/gethomepage/homepage",
+    "latest_tag": "v2.8.0",
+    "latest_tag_date": "2026-11-11",
+    "latest_release": "v2.8.0",
+    "latest_release_date": "2026-11-11",
+    "status": "active",
+    "description": "A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.",
+    "stars": 33707
+  },
+  "immich": {
+    "repo": "https://github.com/immich-app/immich",
+    "latest_tag": "v3.4.1",
+    "latest_tag_date": "2026-11-11",
+    "latest_release": "v3.4.1",
+    "latest_release_date": "2026-11-11",
+    "status": "active",
+    "description": "High performance self-hosted photo and video management solution.",
+    "stars": 119420
+  },
+  "jackett": {
+    "repo": "https://github.com/Jackett/Jackett",
+    "latest_tag": "v0.24.3078",
+    "latest_tag_date": "2026-11-17",
+    "latest_release": "v0.24.3078",
+    "latest_release_date": "2026-11-17",
+    "status": "active",
+    "description": "API Support for your favorite torrent trackers",
+    "stars": 16374
+  },
+  "jellyfin": {
+    "repo": "https://github.com/nyanmisaka/jellyfin",
+    "latest_tag": "v10.4.3",
+    "latest_tag_date": "2019-12-06",
+    "latest_release": "",
+    "latest_release_date": "",
+    "status": "active",
+    "description": "The Free Software Media System",
+    "stars": 263
+  },
+  "kutt": {
+    "repo": "https://github.com/thedevs-network/kutt",
+    "latest_tag": "v3.2.6",
+    "latest_tag_date": "2026-07-05",
+    "latest_release": "v3.2.6",
+    "latest_release_date": "2026-07-05",
+    "status": "active",
+    "description": "Free Modern URL Shortener.",
+    "stars": 11210
+  },
+  "memos": {
+    "repo": "https://github.com/usememos/memos",
+    "latest_tag": "v0.31.0",
+    "latest_tag_date": "2026-09-19",
+    "latest_release": "26.11.1",
+    "latest_release_date": "2026-11-16",
+    "status": "active",
+    "description": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
+    "stars": 64518
+  },
+  "metatube": {
+    "repo": "https://github.com/metatube-community/jellyfin-plugin-metatube",
+    "latest_tag": "v2025.1102.2200.0",
+    "latest_tag_date": "2025-11-02",
+    "latest_release": "v2025.1102.2200.0",
+    "latest_release_date": "2025-11-02",
+    "status": "active",
+    "description": "MetaTube Plugin for Jellyfin/Emby",
+    "stars": 4564
+  },
+  "mihomo": {
+    "repo": "https://github.com/MetaCubeX/mihomo",
+    "latest_tag": "v1.19.34",
+    "latest_tag_date": "2026-11-11",
+    "latest_release": "v1.19.34",
+    "latest_release_date": "2026-11-11",
+    "status": "active",
+    "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
+    "stars": 35848
+  },
+  "music-tag": {
+    "repo": "https://github.com/xhongc/music-tag-web",
+    "latest_tag": "",
+    "latest_tag_date": "",
+    "latest_release": "",
+    "latest_release_date": "",
+    "status": "active",
+    "description": "音乐标签编辑器，可编辑本地音乐文件的元数据, 音乐刮削。（Editable local music file metadata.）",
+    "stars": 6218
+  },
+  "neko": {
+    "repo": "https://github.com/m1k1o/neko",
+    "latest_tag": "v3.2.0",
+    "latest_tag_date": "2026-10-15",
+    "latest_release": "v3.2.0",
+    "latest_release_date": "2026-10-15",
+    "status": "active",
+    "description": "A self hosted virtual browser that runs in docker and uses WebRTC.",
+    "stars": 22687
+  },
+  "newfuture-ddns": {
+    "repo": "https://github.com/NewFuture/DDNS",
+    "latest_tag": "v4.2.1-beta3",
+    "latest_tag_date": "2026-09-06",
+    "latest_release": "v4.2.0",
+    "latest_release_date": "2026-08-27",
+    "status": "active",
+    "description": "🌐自动更新域名解析到本机IP,支持dnspod,阿里DNS,CloudFlare,华为云,DNSCOM...",
+    "stars": 4691
+  },
+  "next-terminal": {
+    "repo": "https://github.com/next-terminal/next-terminal",
+    "latest_tag": "v3.10.3",
+    "latest_tag_date": "2026-10-18",
+    "latest_release": "v3.10.3",
+    "latest_release_date": "2026-10-18",
+    "status": "active",
+    "description": "A simple, secure, easy-to-use bastion and session auditing system. Supports RDP, SSH, VNC, Telnet, HTTP, records and replays sessions for auditing and compliance.",
+    "stars": 5679
+  },
+  "nginx-proxy-manager": {
+    "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+    "latest_tag": "v2.17.0",
+    "latest_tag_date": "2026-11-12",
+    "latest_release": "v2.17.0",
+    "latest_release_date": "2026-11-12",
+    "status": "active",
+    "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+    "stars": 34743
+  },
+  "npm": {
+    "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+    "latest_tag": "v2.17.0",
+    "latest_tag_date": "2026-11-12",
+    "latest_release": "v2.17.0",
+    "latest_release_date": "2026-11-12",
+    "status": "active",
+    "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+    "stars": 34743
+  },
+  "ntfy": {
+    "repo": "https://github.com/binwiederhier/ntfy",
+    "latest_tag": "v2.38.1",
+    "latest_tag_date": "2026-11-16",
+    "latest_release": "v2.38.1",
+    "latest_release_date": "2026-11-16",
+    "status": "active",
+    "description": "Send push notifications to your phone or desktop using PUT/POST",
+    "stars": 35605
+  },
+  "obsidian": {
+    "repo": "https://github.com/Nystik-gh/ignis",
+    "latest_tag": "v0.9.0+obsidian.1.14.4",
+    "latest_tag_date": "2026-11-04",
+    "latest_release": "v0.9.0+obsidian.1.14.4",
+    "latest_release_date": "2026-11-04",
+    "status": "active",
+    "description": "Run Obsidian as a self-hosted web app. Not remote desktop, an actual web app.",
+    "stars": 1664
+  },
+  "obsidian-sync": {
+    "repo": "https://github.com/haierkeys/fast-note-sync-service",
+    "latest_tag": "3.6.1",
+    "latest_tag_date": "2026-08-14",
+    "latest_release": "3.6.1",
+    "latest_release_date": "2026-08-14",
+    "status": "active",
+    "description": "High-performance, low-latency note synchronization, online management, and remote REST API service platform.",
+    "stars": 2570
+  },
+  "opengist": {
+    "repo": "https://github.com/thomiceli/opengist",
+    "latest_tag": "v1.15.3",
+    "latest_tag_date": "2026-10-21",
+    "latest_release": "v1.15.3",
+    "latest_release_date": "2026-10-21",
+    "status": "active",
+    "description": "Self-hosted pastebin powered by Git, open-source alternative to Github Gist.",
+    "stars": 3413
+  },
+  "openlist": {
+    "repo": "https://github.com/OpenListTeam/OpenList",
+    "latest_tag": "v4.2.9",
+    "latest_tag_date": "2026-10-24",
+    "latest_release": "v4.2.9",
+    "latest_release_date": "2026-10-25",
+    "status": "active",
+    "description": "A new AList Fork to Anti Trust Crisis",
+    "stars": 25672
+  },
+  "pairdrop": {
+    "repo": "https://github.com/schlagmichdoch/PairDrop",
+    "latest_tag": "v1.11.2",
+    "latest_tag_date": "2025-02-24",
+    "latest_release": "v1.11.2",
+    "latest_release_date": "2025-02-24",
+    "status": "active",
+    "description": "PairDrop: Transfer Files Cross-Platform. No Setup, No Signup.",
+    "stars": 11829
+  },
+  "portainer": {
+    "repo": "https://github.com/portainer/portainer",
+    "latest_tag": "v0.10.1",
+    "latest_tag_date": "2016-04-03",
+    "latest_release": "2.45.3",
+    "latest_release_date": "2026-10-21",
+    "status": "active",
+    "description": "Making Docker and Kubernetes management easy.",
+    "stars": 38834
+  },
+  "prometheus": {
+    "repo": "https://github.com/prometheus/prometheus",
+    "latest_tag": "v3.16.0",
+    "latest_tag_date": "2026-11-05",
+    "latest_release": "v3.16.0",
+    "latest_release_date": "2026-11-05",
+    "status": "active",
+    "description": "The Prometheus monitoring system and time series database.",
+    "stars": 67665
+  },
+  "prometheus-exporter": {
+    "repo": "https://github.com/prometheus/node_exporter",
+    "latest_tag": "v1.12.1",
+    "latest_tag_date": "2026-07-14",
+    "latest_release": "v1.12.1",
+    "latest_release_date": "2026-07-14",
+    "status": "active",
+    "description": "Exporter for machine metrics",
+    "stars": 13936
+  },
+  "qbittorrent": {
+    "repo": "https://github.com/linuxserver/docker-qbittorrent",
+    "latest_tag": "release-5.3.0",
+    "latest_tag_date": "2026-10-18",
+    "latest_release": "release-5.3.0",
+    "latest_release_date": "2026-10-20",
+    "status": "active",
+    "description": "qBittorrent BitTorrent client",
+    "stars": 41694
+  },
+  "reader": {
+    "repo": "https://github.com/hectorqin/reader",
+    "latest_tag": "v0.1.0",
+    "latest_tag_date": "2026-10-27",
+    "latest_release": "",
+    "latest_release_date": "",
+    "status": "active",
+    "description": "",
+    "stars": 11104
+  },
+  "rustdesk": {
+    "repo": "https://github.com/rustdesk/rustdesk",
+    "latest_tag": "nightly",
+    "latest_tag_date": "2026-07-10",
+    "latest_release": "1.5.3",
+    "latest_release_date": "2026-11-09",
+    "status": "active",
+    "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+    "stars": 129816
+  },
+  "semaphore": {
+    "repo": "https://github.com/semaphoreui/semaphore",
+    "latest_tag": "v2.20.24",
+    "latest_tag_date": "2026-11-11",
+    "latest_release": "v2.20.23",
+    "latest_release_date": "2026-11-10",
+    "status": "active",
+    "description": "Modern UI and powerful API for Ansible, Terraform/OpenTofu/Terragrunt, PowerShell and other DevOps tools.",
+    "stars": 14420
+  },
+  "shadowsocks-rust-client": {
+    "repo": "https://github.com/shadowsocks/shadowsocks-rust",
+    "latest_tag": "v1.25.0",
+    "latest_tag_date": "2026-08-26",
+    "latest_release": "v1.25.0",
+    "latest_release_date": "2026-08-26",
+    "status": "active",
+    "description": "A Rust port of shadowsocks",
+    "stars": 10983
+  },
+  "shadowsocks-rust-server": {
+    "repo": "https://github.com/shadowsocks/shadowsocks-rust",
+    "latest_tag": "v1.25.0",
+    "latest_tag_date": "2026-08-26",
+    "latest_release": "v1.25.0",
+    "latest_release_date": "2026-08-26",
+    "status": "active",
+    "description": "A Rust port of shadowsocks",
+    "stars": 10983
+  },
+  "snappymail": {
+    "repo": "https://github.com/the-djmaze/snappymail",
+    "latest_tag": "v3.0.1.2",
+    "latest_tag_date": "2026-11-11",
+    "latest_release": "v3.0.1",
+    "latest_release_date": "2026-11-09",
+    "status": "active",
+    "description": "Simple, modern \u0026 fast web-based email client",
+    "stars": 1757
+  },
+  "sslocal": {
+    "repo": "https://github.com/shadowsocks/shadowsocks-rust",
+    "latest_tag": "v1.25.0",
+    "latest_tag_date": "2026-08-26",
+    "latest_release": "v1.25.0",
+    "latest_release_date": "2026-08-26",
+    "status": "active",
+    "description": "A Rust port of shadowsocks",
+    "stars": 10983
+  },
+  "steam-headless": {
+    "repo": "https://github.com/Steam-Headless/docker-steam-headless",
+    "latest_tag": "1.0.3",
+    "latest_tag_date": "2026-09-25",
+    "latest_release": "0.2.0",
+    "latest_release_date": "2023-09-29",
+    "status": "active",
+    "description": "A Headless Steam Docker image supporting NVIDIA GPU and accessible via Web UI",
+    "stars": 5006
+  },
+  "swingmusic": {
+    "repo": "https://github.com/swingmx/swingmusic",
+    "latest_tag": "v3.0.0",
+    "latest_tag_date": "2026-06-11",
+    "latest_release": "v3.0.0",
+    "latest_release_date": "2026-06-12",
+    "status": "active",
+    "description": " Swing Music is a beautiful, self-hosted music player for your local audio files. Like a cooler Spotify ... but bring your own music.",
+    "stars": 2095
+  },
+  "syncthing": {
+    "repo": "https://github.com/syncthing/syncthing",
+    "latest_tag": "v2.1.7",
+    "latest_tag_date": "2026-10-20",
+    "latest_release": "v2.1.7",
+    "latest_release_date": "2026-10-21",
+    "status": "active",
+    "description": "Open Source Continuous File Synchronization",
+    "stars": 90514
+  },
+  "talebook": {
+    "repo": "https://github.com/talebook/talebook",
+    "latest_tag": "v26.10.18",
+    "latest_tag_date": "2026-10-17",
+    "latest_release": "v26.10.18",
+    "latest_release_date": "2026-10-18",
+    "status": "active",
+    "description": "一个简单好用的个人书库",
+    "stars": 5911
+  },
+  "taosync": {
+    "repo": "https://github.com/dr34m-cn/taosync",
+    "latest_tag": "v0.5.0",
+    "latest_tag_date": "2026-11-17",
+    "latest_release": "v0.5.0",
+    "latest_release_date": "2026-11-17",
+    "status": "active",
+    "description": "TaoSync 是一个支持内置存储引擎与 OpenList/AList v3+ 的自动化同步工具/TaoSync is an automated synchronization tool with a built-in storage engine and support for OpenList/AList v3+.",
+    "stars": 1569
+  },
+  "transmission": {
+    "repo": "https://github.com/transmission/transmission",
+    "latest_tag": "nightly",
+    "latest_tag_date": "2026-08-27",
+    "latest_release": "4.1.4",
+    "latest_release_date": "2026-10-24",
+    "status": "active",
+    "description": "Official Transmission BitTorrent client repository",
+    "stars": 15429
+  },
+  "upsnap": {
+    "repo": "https://github.com/seriousm4x/UpSnap",
+    "latest_tag": "v3.0.0-beta.3",
+    "latest_tag_date": "2023-01-29",
+    "latest_release": "5.7.3",
+    "latest_release_date": "2026-11-06",
+    "status": "active",
+    "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
+    "stars": 6442
+  },
+  "uptime-kuma": {
+    "repo": "https://github.com/louislam/uptime-kuma",
+    "latest_tag": "2.5.11",
+    "latest_tag_date": "2026-11-12",
+    "latest_release": "2.5.11",
+    "latest_release_date": "2026-11-12",
+    "status": "active",
+    "description": "A fancy self-hosted monitoring tool",
+    "stars": 94521
+  },
+  "vaultwarden": {
+    "repo": "https://github.com/dani-garcia/vaultwarden",
+    "latest_tag": "1.37.5",
+    "latest_tag_date": "2026-11-01",
+    "latest_release": "1.37.5",
+    "latest_release_date": "2026-11-01",
+    "status": "active",
+    "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
+    "stars": 70875
+  },
+  "zerotier": {
+    "repo": "https://github.com/zerotier/ZeroTierOne",
+    "latest_tag": "v2-before-rusting",
+    "latest_tag_date": "2020-12-04",
+    "latest_release": "1.16.2",
+    "latest_release_date": "2026-05-28",
+    "status": "active",
+    "description": "A Smart Ethernet Switch for Earth",
+    "stars": 17264
+  }
+}

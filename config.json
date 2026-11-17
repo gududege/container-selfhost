@@ -1,0 +1,327 @@
+{
+  "3x-ui": {
+    "repo": "https://github.com/MHSanaei/3x-ui",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "alist": {
+    "repo": "https://github.com/alist-org/alist",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "ani-rss": {
+    "repo": "https://github.com/wushuo894/ani-rss",
+    "readme_path": "README.md",
+    "type": "Automation"
+  },
+  "apprise": {
+    "repo": "https://github.com/caronc/apprise-api",
+    "readme_path": "README.md",
+    "type": "Communication"
+  },
+  "auto-bangumi": {
+    "repo": "https://github.com/EstrellaXD/Auto_Bangumi",
+    "readme_path": "README.md",
+    "type": "Automation"
+  },
+  "bark": {
+    "repo": "https://github.com/Finb/bark-server",
+    "readme_path": "README.md",
+    "type": "Communication"
+  },
+  "calibre-web": {
+    "repo": "https://github.com/crocodilestick/Calibre-Web-Automated",
+    "readme_path": "README.md",
+    "type": "Document Management"
+  },
+  "chinese-sub-finder": {
+    "repo": "https://github.com/ChineseSubFinder/ChineseSubFinder",
+    "readme_path": "README.md",
+    "type": "Media Management"
+  },
+  "cloudflared": {
+    "repo": "https://github.com/cloudflare/cloudflared",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "code-server": {
+    "repo": "https://github.com/coder/code-server",
+    "readme_path": "README.md",
+    "type": "Software Development"
+  },
+  "coder": {
+    "repo": "https://github.com/coder/coder",
+    "readme_path": "README.md",
+    "type": "Software Development"
+  },
+  "cookiecloud": {
+    "repo": "https://github.com/easychen/CookieCloud",
+    "readme_path": "README.md",
+    "type": "Miscellaneous"
+  },
+  "cypht": {
+    "repo": "https://github.com/cypht-org/cypht",
+    "readme_path": "README.md",
+    "type": "Communication"
+  },
+  "dashy": {
+    "repo": "https://github.com/Lissy93/dashy",
+    "readme_path": "README.md",
+    "type": "Personal Dashboards"
+  },
+  "docker-proxy": {
+    "repo": "https://github.com/dqzboy/Docker-Proxy",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "dozzle": {
+    "repo": "https://github.com/amir20/dozzle",
+    "readme_path": "README.md",
+    "type": "Monitoring & Status Pages"
+  },
+  "dsm": {
+    "repo": "https://github.com/vdsm/virtual-dsm",
+    "readme_path": "README.md",
+    "type": "Self-hosting Solutions"
+  },
+  "duplicati": {
+    "repo": "https://github.com/linuxserver/docker-duplicati",
+    "readme_path": "README.md",
+    "type": "Backup"
+  },
+  "filecodebox": {
+    "repo": "https://github.com/vastsa/FileCodeBox",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "flaresolverr": {
+    "repo": "https://github.com/FlareSolverr/FlareSolverr",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "gitea": {
+    "repo": "https://github.com/go-gitea/gitea",
+    "readme_path": "README.md",
+    "type": "Software Development"
+  },
+  "grafana": {
+    "repo": "https://github.com/grafana/grafana",
+    "readme_path": "README.md",
+    "type": "Monitoring & Status Pages"
+  },
+  "halo": {
+    "repo": "https://github.com/halo-dev/halo",
+    "readme_path": "README.md",
+    "type": "Content Management Systems (CMS)"
+  },
+  "hlink": {
+    "repo": "https://github.com/likun7981/hlink",
+    "readme_path": "README.md",
+    "type": "Automation"
+  },
+  "homepage": {
+    "repo": "https://github.com/gethomepage/homepage",
+    "readme_path": "README.md",
+    "type": "Personal Dashboards"
+  },
+  "immich": {
+    "repo": "https://github.com/immich-app/immich",
+    "readme_path": "README.md",
+    "type": "Photo Galleries"
+  },
+  "jackett": {
+    "repo": "https://github.com/Jackett/Jackett",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "jellyfin": {
+    "repo": "https://github.com/nyanmisaka/jellyfin",
+    "readme_path": "README.md",
+    "type": "Media Streaming"
+  },
+  "kutt": {
+    "repo": "https://github.com/thedevs-network/kutt",
+    "readme_path": "README.md",
+    "type": "URL Shorteners"
+  },
+  "memos": {
+    "repo": "https://github.com/usememos/memos",
+    "readme_path": "README.md",
+    "type": "Note-taking & Editors"
+  },
+  "metatube": {
+    "repo": "https://github.com/metatube-community/jellyfin-plugin-metatube",
+    "readme_path": "README.md",
+    "type": "Media Management"
+  },
+  "mihomo": {
+    "repo": "https://github.com/MetaCubeX/mihomo",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "music-tag": {
+    "repo": "https://github.com/xhongc/music-tag-web",
+    "readme_path": "README.md",
+    "type": "Media Management"
+  },
+  "neko": {
+    "repo": "https://github.com/m1k1o/neko",
+    "readme_path": "README.md",
+    "type": "Remote Access"
+  },
+  "newfuture-ddns": {
+    "repo": "https://github.com/NewFuture/DDNS",
+    "readme_path": "README.md",
+    "type": "DNS"
+  },
+  "next-terminal": {
+    "repo": "https://github.com/next-terminal/next-terminal",
+    "readme_path": "README.md",
+    "type": "Remote Access"
+  },
+  "nginx-proxy-manager": {
+    "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "npm": {
+    "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "ntfy": {
+    "repo": "https://github.com/binwiederhier/ntfy",
+    "readme_path": "README.md",
+    "type": "Communication"
+  },
+  "obsidian": {
+    "repo": "https://github.com/Nystik-gh/ignis",
+    "readme_path": "README.md",
+    "type": "Note-taking & Editors"
+  },
+  "obsidian-sync": {
+    "repo": "https://github.com/haierkeys/fast-note-sync-service",
+    "readme_path": "README.md",
+    "type": "Note-taking & Editors"
+  },
+  "opengist": {
+    "repo": "https://github.com/thomiceli/opengist",
+    "readme_path": "README.md",
+    "type": "Pastebins"
+  },
+  "openlist": {
+    "repo": "https://github.com/OpenListTeam/OpenList",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "pairdrop": {
+    "repo": "https://github.com/schlagmichdoch/PairDrop",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "portainer": {
+    "repo": "https://github.com/portainer/portainer",
+    "readme_path": "README.md",
+    "type": "Self-hosting Solutions"
+  },
+  "prometheus": {
+    "repo": "https://github.com/prometheus/prometheus",
+    "readme_path": "README.md",
+    "type": "Monitoring & Status Pages"
+  },
+  "prometheus-exporter": {
+    "repo": "https://github.com/prometheus/node_exporter",
+    "readme_path": "README.md",
+    "type": "Monitoring & Status Pages"
+  },
+  "qbittorrent": {
+    "repo": "https://github.com/linuxserver/docker-qbittorrent",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "reader": {
+    "repo": "https://github.com/hectorqin/reader",
+    "readme_path": "README.md",
+    "type": "Document Management"
+  },
+  "rustdesk": {
+    "repo": "https://github.com/rustdesk/rustdesk",
+    "readme_path": "README.md",
+    "type": "Remote Access"
+  },
+  "semaphore": {
+    "repo": "https://github.com/semaphoreui/semaphore",
+    "readme_path": "README.md",
+    "type": "Software Development"
+  },
+  "shadowsocks-rust-client": {
+    "repo": "https://github.com/shadowsocks/shadowsocks-rust",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "shadowsocks-rust-server": {
+    "repo": "https://github.com/shadowsocks/shadowsocks-rust",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "snappymail": {
+    "repo": "https://github.com/the-djmaze/snappymail",
+    "readme_path": "README.md",
+    "type": "Communication"
+  },
+  "sslocal": {
+    "repo": "https://github.com/shadowsocks/shadowsocks-rust",
+    "readme_path": "README.md",
+    "type": "Proxy"
+  },
+  "steam-headless": {
+    "repo": "https://github.com/Steam-Headless/docker-steam-headless",
+    "readme_path": "README.md",
+    "type": "Games"
+  },
+  "swingmusic": {
+    "repo": "https://github.com/swingmx/swingmusic",
+    "readme_path": "README.md",
+    "type": "Media Streaming"
+  },
+  "syncthing": {
+    "repo": "https://github.com/syncthing/syncthing",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "talebook": {
+    "repo": "https://github.com/talebook/talebook",
+    "readme_path": "README.md",
+    "type": "Document Management"
+  },
+  "taosync": {
+    "repo": "https://github.com/dr34m-cn/taosync",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "transmission": {
+    "repo": "https://github.com/transmission/transmission",
+    "readme_path": "README.md",
+    "type": "File Transfer"
+  },
+  "upsnap": {
+    "repo": "https://github.com/seriousm4x/UpSnap",
+    "readme_path": "README.md",
+    "type": "Network Utilities"
+  },
+  "uptime-kuma": {
+    "repo": "https://github.com/louislam/uptime-kuma",
+    "readme_path": "README.md",
+    "type": "Monitoring & Status Pages"
+  },
+  "vaultwarden": {
+    "repo": "https://github.com/dani-garcia/vaultwarden",
+    "readme_path": "README.md",
+    "type": "Password Managers"
+  },
+  "zerotier": {
+    "repo": "https://github.com/zerotier/ZeroTierOne",
+    "readme_path": "README.md",
+    "type": "VPN"
+  }
+}

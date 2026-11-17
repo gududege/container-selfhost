@@ -1,0 +1,32 @@
+services:
+  mihomo:
+    image: metacubex/mihomo:latest
+    container_name: mihomo
+    restart: unless-stopped
+    # 必须用 host 网络模式，TUN 才能接管 Unraid 宿主机本身（而不只是容器）的流量
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun:/dev/net/tun
+    volumes:
+      - ./config:/root/.config/mihomo
+    environment:
+      - TZ=Asia/Shanghai
+    # 如果开启 TUN 后仍然无法接管系统路由（常见于 stack: system 模式），
+    # 把下面这行取消注释，改用特权模式（不推荐长期使用，先排查问题即可）
+    # privileged: true
+
+  metacubexd:
+    image: ghcr.io/metacubex/metacubexd:latest
+    container_name: metacubexd
+    restart: unless-stopped
+    ports:
+      - 8099:80
+    depends_on:
+      - mihomo
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

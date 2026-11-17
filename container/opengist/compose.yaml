@@ -1,0 +1,28 @@
+services:
+  opengist:
+    image: ghcr.io/thomiceli/opengist:latest
+    container_name: opengist
+    restart: unless-stopped
+    ports:
+      - 6157:6157 # HTTP port
+      - 2222:2222 # SSH port, can be removed if you don't use SSH
+    volumes:
+      - ./opengist:/opengist
+    environment:
+      - OG_METRICS_ENABLED=true
+      - OG_EXTERNAL_URL=https://example.com
+    healthcheck:
+      test:
+        - CMD
+        - curl
+        - -f
+        - http://localhost:6157/healthcheck
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

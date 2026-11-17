@@ -1,0 +1,19 @@
+services:
+  cypht:
+    image: docker.xuanyuan.me/cypht-org/cypht:latest
+    container_name: cypht
+    restart: unless-stopped
+    ports:
+      - 8181:80
+    environment:
+      - CYPHT_DEBUG=false
+      - CYPHT_AUTH_TYPE=sqlite
+      - CYPHT_SQLITE_PATH=/data/cypht.sqlite
+    volumes:
+      - ./data:/data
+      - ./config:/var/www/cypht/config
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

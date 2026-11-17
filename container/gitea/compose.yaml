@@ -1,0 +1,42 @@
+services:
+  gitea:
+    container_name: gitea
+    hostname: gitea
+    image: gitea/gitea:latest
+    volumes:
+      - ${ENV_DIR_DATA:-./data}:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 10022:22
+      - 3001:3000
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+  act-runner:
+    container_name: gitea-runner
+    image: gitea/act_runner:latest
+    hostname: gitea_runner
+    environment:
+      - CONFIG_FILE=/config.yaml
+      - GITEA_INSTANCE_URL=http://gitea:3000
+      - GITEA_RUNNER_REGISTRATION_TOKEN=${GITEA_RUNNER_TOKEN}
+      - GITEA_RUNNER_NAME=${GITEA_RUNNER_NAME}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./runner/config.yaml:/config.yaml
+      - ./runner/data:/data
+    restart: unless-stopped
+    depends_on:
+      - gitea
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

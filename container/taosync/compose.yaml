@@ -1,0 +1,14 @@
+services:
+  tao-sync:
+    image: dr34m/tao-sync:latest
+    container_name: taosync
+    restart: unless-stopped
+    ports:
+      - 8023:8023
+    volumes:
+      - ./data:/app/data
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

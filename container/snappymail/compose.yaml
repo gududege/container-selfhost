@@ -1,0 +1,16 @@
+services:
+  snappymail:
+    image: djmaze/snappymail:latest
+    ports:
+      - 8888:8888
+    environment:
+      - TZ=Asia/Shanghai
+      - DEBUG=true
+    volumes:
+      - ./data:/var/lib/snappymail
+    networks:
+      - all-connection
+    restart: unless-stopped
+networks:
+  all-connection:
+    external: true

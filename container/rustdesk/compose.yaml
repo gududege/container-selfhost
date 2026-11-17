@@ -1,0 +1,35 @@
+services:
+  rustdesk-server:
+    container_name: rustdesk-server
+    image: rustdesk/rustdesk-server-s6:latest
+    network_mode: host
+    environment:
+      - RELAY=${ENV_HOST}:21117
+      - ENCRYPTED_ONLY=0
+      - KEY_PRIV=${ENV_KEY_PRIV}
+      - KEY_PUB=${ENV_KEY_PUB}
+    volumes:
+      - ./data:/db
+    restart: unless-stopped
+  rustdesk-api:
+    container_name: rustdesk-api
+    image: lejianwen/rustdesk-api
+    ports:
+      - 21114:21114
+    environment:
+      - TZ=Asia/Shanghai
+      - RUSTDESK_API_RUSTDESK_ID_SERVER=${ENV_HOST}:21116 #21116
+      - RUSTDESK_API_RUSTDESK_RELAY_SERVER=${ENV_HOST}:21117 #21117
+      - RUSTDESK_API_RUSTDESK_API_SERVER=http://${ENV_HOST}:21114 #21114
+      - RUSTDESK_API_RUSTDESK_KEY=${ENV_KEY_PUB}
+    volumes:
+      - ./data/api:/app/data #将数据库挂载
+      #- ./data/server:/app/conf/data #挂载key文件到api容器，可以不用使用 RUSTDESK_API_RUSTDESK_KEY
+    networks:
+      - all-connection
+    restart: unless-stopped
+    depends_on:
+      - rustdesk-server
+networks:
+  all-connection:
+    external: true

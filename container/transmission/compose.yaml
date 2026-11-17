@@ -1,0 +1,30 @@
+services:
+  transmission:
+    image: lscr.io/linuxserver/transmission:latest
+    container_name: transmission
+    user: 1000:1000
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+      - TRANSMISSION_WEB_HOME=/ui/transmission-next-ui #optional
+      - USER=${ENV_USER} #optional
+      - PASS=${ENV_USER_PASSWORD} #optional
+      - WHITELIST= #optional
+      - PEERPORT=51413 #optional
+      - HOST_WHITELIST= #optional
+    volumes:
+      - ${ENV_DIR_CONFIG:-./data}:/config
+      - ${ENV_DIR_UI:-./ui}:/ui
+      - ${ENV_DIR_DOWNLOAD:-./downloads}:/downloads #optional
+      - ${ENV_DIR_WATCH:-./watch}:/watch #optional
+    ports:
+      - 9091:9091
+      - 51413:51413
+      - 51413:51413/udp
+    restart: unless-stopped
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

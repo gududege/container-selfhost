@@ -1,0 +1,24 @@
+services:
+  ani-rss:
+    image: wushuo894/ani-rss:latest
+    container_name: ani-rss
+    # 自定义 DNS
+    # dns: 8.8.8.8
+    ports:
+      - 7789:7789
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=022
+      - PORT=7789 # ani-rss 端口
+      - CONFIG=/config
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./config:/config
+      - ${ENV_DIR_DOWNLOAD}:/downloads/ani-rss # 番剧挂载路径两侧须一致
+    restart: unless-stopped
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

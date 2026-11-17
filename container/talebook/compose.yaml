@@ -1,0 +1,19 @@
+services:
+  talebook:
+    image: talebook/talebook:latest
+    container_name: talebook
+    restart: unless-stopped
+    volumes:
+      - ./data:/data
+    ports:
+      - 8180:80
+    environment:
+      # 如果需要上传ssl证书，请将PUID与PGID设置为0（root用户）
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

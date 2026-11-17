@@ -1,0 +1,15 @@
+services:
+  fast-note-sync-service:
+    image: haierkeys/fast-note-sync-service:latest
+    container_name: fast-note-sync-service
+    restart: unless-stopped
+    ports:
+      - 9001:9000 # RESTful API & WebSocket 端口 其中 /api/user/sync 为 WebSocket 接口地址
+    volumes:
+      - ./storage:/fast-note-sync/storage # 数据存储
+      - ./config:/fast-note-sync/config # 配置文件
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

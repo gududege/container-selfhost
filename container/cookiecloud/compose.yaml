@@ -1,0 +1,14 @@
+services:
+  cookiecloud:
+    image: easychen/cookiecloud:latest
+    container_name: cookiecloud-app
+    restart: unless-stopped
+    volumes:
+      - ./data:/data/api/data
+    ports:
+      - 8188:8088
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

@@ -1,0 +1,22 @@
+services:
+  server:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=30d   # 保留30天
+    environment:
+      - PUID=0
+      - PGID=0
+      - UMASK=022
+    ports:
+      - 9080:9090
+    volumes:
+      - ./config:/etc/prometheus
+      - ./data:/prometheus
+    restart: unless-stopped
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

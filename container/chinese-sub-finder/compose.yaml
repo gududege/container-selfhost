@@ -1,0 +1,27 @@
+services:
+  chinesesubfinder:
+    container_name: chinesesubfinder
+    image: allanpk716/chinesesubfinder:latest
+    hostname: chinesesubfinder
+    environment:
+      - PUID=0     
+      - PGID=0        
+      - PERMS=true        # 是否重设/media权限
+      - TZ=Asia/Shanghai 
+      - UMASK=022     
+    volumes:
+      - ./config:/config
+      - ${ENV_DIR_MEDIA:-./media}:/media    # 请修改为你的媒体目录，冒号右边可以改成你方便记忆的目录，多个媒体目录需要分别映射进来
+      - ./cache:/root/.cache/rod/browser    # 容器重启后无需再次下载 chrome，除非 go-rod 更新
+    privileged: true
+    ports:
+      - 9035:19035
+      - 9037:19037
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true

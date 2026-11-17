@@ -1,0 +1,105 @@
+services:
+  ## docker hub
+  dockerhub:
+    container_name: reg-docker-hub
+    image: dqzboy/registry:latest
+    restart: unless-stopped
+    environment:
+      - OTEL_TRACES_EXPORTER=none
+      #- http=http://host:port
+      #- https=http://host:port
+    volumes:
+      - ./registry/data:/var/lib/registry
+      - ./config/registry-hub.yml:/etc/distribution/config.yml
+      #- ./htpasswd:/auth/htpasswd
+    ports:
+      - 51000:5000
+    networks:
+      - registry-net
+      - all-connection
+  ## ghcr.io
+  ghcr:
+    container_name: reg-ghcr
+    image: dqzboy/registry:latest
+    restart: unless-stopped
+    environment:
+      - OTEL_TRACES_EXPORTER=none
+      #- http=http://host:port
+      #- https=http://host:port
+    volumes:
+      - ./registry/data:/var/lib/registry
+      - ./config/registry-ghcr.yml:/etc/distribution/config.yml
+      #- ./htpasswd:/auth/htpasswd
+    ports:
+      - 52000:5000
+    networks:
+      - registry-net
+      - all-connection
+  ## gcr.io
+  quay:
+    container_name: reg-quay
+    image: dqzboy/registry:latest
+    restart: unless-stopped
+    environment:
+      - OTEL_TRACES_EXPORTER=none
+      #- http=http://host:port
+      #- https=http://host:port
+    volumes:
+      - ./registry/data:/var/lib/registry
+      - ./config/registry-quay.yml:/etc/distribution/config.yml
+      #- ./htpasswd:/auth/htpasswd
+    ports:
+      - 56000:5000
+    networks:
+      - registry-net
+      - all-connection
+  ## k8s.gcr.io
+  mcr:
+    container_name: reg-mcr
+    image: dqzboy/registry:latest
+    restart: unless-stopped
+    environment:
+      - OTEL_TRACES_EXPORTER=none
+      #- http=http://host:port
+      #- https=http://host:port
+    volumes:
+      - ./registry/data:/var/lib/registry
+      - ./config/registry-mcr.yml:/etc/distribution/config.yml
+      #- ./htpasswd:/auth/htpasswd
+    ports:
+      - 57000:5000
+    networks:
+      - registry-net
+      - all-connection
+  registry-ui:
+    container_name: registry-ui
+    image: dqzboy/docker-registry-ui:latest
+    environment:
+      - DOCKER_REGISTRY_URL=http://reg-docker-hub:5000
+      - SECRET_KEY_BASE=9f18244a1e1179fa5aa4a06a335d01b2
+      - ENABLE_DELETE_IMAGES=true
+      - NO_SSL_VERIFICATION=true
+    restart: unless-stopped
+      #- http=http://host:port
+      #- https=http://host:port
+    ports:
+      - 50000:8080
+      #- ./htpasswd:/auth/htpasswd
+    networks:
+      - registry-net
+      - all-connection
+  hubcmd-ui:
+    container_name: hubcmd-ui
+    image: dqzboy/hubcmd-ui:latest
+    restart: unless-stopped
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 30080:3000
+    networks:
+      - registry-net
+      - all-connection
+networks:
+  registry-net: null
+  all-connection:
+    external: true

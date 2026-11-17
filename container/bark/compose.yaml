@@ -1,0 +1,15 @@
+services:
+  bark-server:
+    container_name: bark-server
+    image: finab/bark-server:latest
+    hostname: bark
+    volumes:
+      - ./data:/data
+    ports:
+      - 6080:8080
+    restart: unless-stopped
+    networks:
+      - all-connection
+networks:
+  all-connection:
+    external: true
