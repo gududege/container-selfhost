@@ -7,7 +7,7 @@
     "latest_release_date": "2026-10-25",
     "status": "active",
     "description": "Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG) ",
-    "stars": 50059
+    "stars": 50064
   },
   "alist": {
     "repo": "https://github.com/alist-org/alist",
@@ -57,7 +57,7 @@
     "latest_release_date": "2026-11-06",
     "status": "active",
     "description": "Backend of Bark",
-    "stars": 3717
+    "stars": 3718
   },
   "calibre-web": {
     "repo": "https://github.com/crocodilestick/Calibre-Web-Automated",
@@ -97,7 +97,7 @@
     "latest_release_date": "2026-11-07",
     "status": "active",
     "description": "VS Code in the browser",
-    "stars": 79897
+    "stars": 79899
   },
   "coder": {
     "repo": "https://github.com/coder/coder",
@@ -107,7 +107,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Secure environments for developers and their agents",
-    "stars": 17409
+    "stars": 17410
   },
   "cookiecloud": {
     "repo": "https://github.com/easychen/CookieCloud",
@@ -217,7 +217,7 @@
     "latest_release_date": "2026-11-10",
     "status": "active",
     "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. ",
-    "stars": 77965
+    "stars": 77966
   },
   "halo": {
     "repo": "https://github.com/halo-dev/halo",
@@ -227,7 +227,7 @@
     "latest_release_date": "2026-11-13",
     "status": "active",
     "description": "Halo 是一款强大易用的开源建站工具，从个人博客、知识库，到企业官网、在线商城，Halo 都能助您轻松实现，一站式满足您的多样化建站需求。",
-    "stars": 40323
+    "stars": 40324
   },
   "hlink": {
     "repo": "https://github.com/likun7981/hlink",
@@ -257,7 +257,7 @@
     "latest_release_date": "2026-11-11",
     "status": "active",
     "description": "High performance self-hosted photo and video management solution.",
-    "stars": 119450
+    "stars": 119452
   },
   "jackett": {
     "repo": "https://github.com/Jackett/Jackett",
@@ -297,7 +297,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
-    "stars": 64519
+    "stars": 64520
   },
   "metatube": {
     "repo": "https://github.com/metatube-community/jellyfin-plugin-metatube",
@@ -367,7 +367,7 @@
     "latest_release_date": "2026-11-12",
     "status": "active",
     "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
-    "stars": 34746
+    "stars": 34745
   },
   "npm": {
     "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
@@ -377,7 +377,7 @@
     "latest_release_date": "2026-11-12",
     "status": "active",
     "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
-    "stars": 34746
+    "stars": 34745
   },
   "ntfy": {
     "repo": "https://github.com/binwiederhier/ntfy",
@@ -387,7 +387,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Send push notifications to your phone or desktop using PUT/POST",
-    "stars": 35614
+    "stars": 35615
   },
   "obsidian": {
     "repo": "https://github.com/Nystik-gh/ignis",
@@ -397,7 +397,7 @@
     "latest_release_date": "2026-11-04",
     "status": "active",
     "description": "Run Obsidian as a self-hosted web app. Not remote desktop, an actual web app.",
-    "stars": 1665
+    "stars": 1666
   },
   "obsidian-sync": {
     "repo": "https://github.com/haierkeys/fast-note-sync-service",
@@ -447,7 +447,7 @@
     "latest_release_date": "2026-10-21",
     "status": "active",
     "description": "Making Docker and Kubernetes management easy.",
-    "stars": 38840
+    "stars": 38841
   },
   "prometheus": {
     "repo": "https://github.com/prometheus/prometheus",
@@ -457,7 +457,7 @@
     "latest_release_date": "2026-11-05",
     "status": "active",
     "description": "The Prometheus monitoring system and time series database.",
-    "stars": 67674
+    "stars": 67676
   },
   "prometheus-exporter": {
     "repo": "https://github.com/prometheus/node_exporter",
@@ -497,7 +497,7 @@
     "latest_release_date": "2026-11-09",
     "status": "active",
     "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
-    "stars": 129878
+    "stars": 129885
   },
   "semaphore": {
     "repo": "https://github.com/semaphoreui/semaphore",
@@ -507,7 +507,7 @@
     "latest_release_date": "2026-11-10",
     "status": "active",
     "description": "Modern UI and powerful API for Ansible, Terraform/OpenTofu/Terragrunt, PowerShell and other DevOps tools.",
-    "stars": 14420
+    "stars": 14421
   },
   "shadowsocks-rust-client": {
     "repo": "https://github.com/shadowsocks/shadowsocks-rust",
@@ -557,7 +557,7 @@
     "latest_release_date": "2023-09-29",
     "status": "active",
     "description": "A Headless Steam Docker image supporting NVIDIA GPU and accessible via Web UI",
-    "stars": 5007
+    "stars": 5008
   },
   "swingmusic": {
     "repo": "https://github.com/swingmx/swingmusic",
@@ -637,7 +637,7 @@
     "latest_release_date": "2026-11-01",
     "status": "active",
     "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
-    "stars": 70891
+    "stars": 70893
   },
   "zerotier": {
     "repo": "https://github.com/zerotier/ZeroTierOne",
