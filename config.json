@@ -81,7 +81,7 @@
   },
   "dsm": {
     "repo": "https://github.com/vdsm/virtual-dsm",
-    "readme_path": "README.md",
+    "readme_path": "readme.md",
     "type": "Self-hosting Solutions"
   },
   "duplicati": {
