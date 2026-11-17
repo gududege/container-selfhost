@@ -46,7 +46,7 @@
   },
   "code-server": {
     "repo": "https://github.com/coder/code-server",
-    "readme_path": "README.md",
+    "readme_path": "docs/README.md",
     "type": "Software Development"
   },
   "coder": {
@@ -91,7 +91,7 @@
   },
   "filecodebox": {
     "repo": "https://github.com/vastsa/FileCodeBox",
-    "readme_path": "README.md",
+    "readme_path": "readme.md",
     "type": "File Transfer"
   },
   "flaresolverr": {
@@ -116,7 +116,7 @@
   },
   "hlink": {
     "repo": "https://github.com/likun7981/hlink",
-    "readme_path": "README.md",
+    "readme_path": "readme.md",
     "type": "Automation"
   },
   "homepage": {
