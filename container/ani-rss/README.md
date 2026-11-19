@@ -11,6 +11,8 @@
 |
 [Docker部署](https://docs.wushuo.top/deploy/docker)
 |
+[Native构建](NATIVE.md)
+|
 [常见问题](https://docs.wushuo.top/faq)
 |
 [参与开发](https://docs.wushuo.top/dev/basic)
