@@ -7,7 +7,7 @@
     "latest_release_date": "2026-10-25",
     "status": "active",
     "description": "Supporting multi-protocol multi-user(Vmess, Vless, Trojan, ShadowSocks, Wireguard, Hysteria, Tunnel, Mixed, HTTP, Tun, MTProto، AmneziaWG) ",
-    "stars": 50201
+    "stars": 50267
   },
   "alist": {
     "repo": "https://github.com/alist-org/alist",
@@ -17,7 +17,7 @@
     "latest_release_date": "2026-10-21",
     "status": "active",
     "description": "🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。",
-    "stars": 50468
+    "stars": 50473
   },
   "ani-rss": {
     "repo": "https://github.com/wushuo894/ani-rss",
@@ -27,7 +27,7 @@
     "latest_release_date": "2026-11-19",
     "status": "active",
     "description": "基于RSS自动追番、订阅、下载、刮削、洗版",
-    "stars": 3597
+    "stars": 3598
   },
   "apprise": {
     "repo": "https://github.com/caronc/apprise-api",
@@ -47,7 +47,7 @@
     "latest_release_date": "2026-10-24",
     "status": "active",
     "description": "AutoBangumi - 全自动追番工具",
-    "stars": 8327
+    "stars": 8329
   },
   "bark": {
     "repo": "https://github.com/Finb/bark-server",
@@ -57,7 +57,7 @@
     "latest_release_date": "2026-11-06",
     "status": "active",
     "description": "Backend of Bark",
-    "stars": 3719
+    "stars": 3721
   },
   "calibre-web": {
     "repo": "https://github.com/crocodilestick/Calibre-Web-Automated",
@@ -67,7 +67,7 @@
     "latest_release_date": "2026-09-28",
     "status": "active",
     "description": "Calibre-Web but Automated and with tons of New Features! Fully automate and simplify your eBook set up!",
-    "stars": 6641
+    "stars": 6643
   },
   "chinese-sub-finder": {
     "repo": "https://github.com/ChineseSubFinder/ChineseSubFinder",
@@ -87,17 +87,17 @@
     "latest_release_date": "2026-11-17",
     "status": "active",
     "description": "Cloudflare Tunnel client",
-    "stars": 16653
+    "stars": 16675
   },
   "code-server": {
     "repo": "https://github.com/coder/code-server",
-    "latest_tag": "v4.145.2",
-    "latest_tag_date": "2026-11-06",
-    "latest_release": "v4.145.2",
-    "latest_release_date": "2026-11-07",
+    "latest_tag": "v4.146.0",
+    "latest_tag_date": "2026-11-20",
+    "latest_release": "v4.146.0",
+    "latest_release_date": "2026-11-20",
     "status": "active",
     "description": "VS Code in the browser",
-    "stars": 79911
+    "stars": 79918
   },
   "coder": {
     "repo": "https://github.com/coder/coder",
@@ -107,7 +107,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Secure environments for developers and their agents",
-    "stars": 17441
+    "stars": 17450
   },
   "cookiecloud": {
     "repo": "https://github.com/easychen/CookieCloud",
@@ -127,17 +127,17 @@
     "latest_release_date": "2026-11-06",
     "status": "active",
     "description": "Cypht: Lightweight Open Source webmail aggregator [PHP, JS].  Supports IMAP/SMTP, JMAP and EWS (Exchange Web Services)",
-    "stars": 1815
+    "stars": 1817
   },
   "dashy": {
     "repo": "https://github.com/Lissy93/dashy",
-    "latest_tag": "4.9.19",
-    "latest_tag_date": "2026-11-16",
+    "latest_tag": "4.9.20",
+    "latest_tag_date": "2026-11-20",
     "latest_release": "4.9.0",
     "latest_release_date": "2026-10-23",
     "status": "active",
     "description": "🚀 A self-hostable personal dashboard built for you. Includes status-checking, widgets, themes, icon packs, a UI editor and tons more!",
-    "stars": 27029
+    "stars": 27035
   },
   "docker-proxy": {
     "repo": "https://github.com/dqzboy/Docker-Proxy",
@@ -157,7 +157,7 @@
     "latest_release_date": "2026-11-19",
     "status": "active",
     "description": "Realtime log viewer for containers.  Supports Docker, Swarm and K8s. ",
-    "stars": 14980
+    "stars": 14990
   },
   "dsm": {
     "repo": "https://github.com/vdsm/virtual-dsm",
@@ -167,7 +167,7 @@
     "latest_release_date": "2026-11-12",
     "status": "active",
     "description": "Virtual DSM in a Docker container.",
-    "stars": 4036
+    "stars": 4038
   },
   "duplicati": {
     "repo": "https://github.com/linuxserver/docker-duplicati",
@@ -187,7 +187,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件（FileCodeBox - File Express Cabinet - Anonymous Passcode Sharing Text, Files, Like Taking Express Delivery for Files）",
-    "stars": 8813
+    "stars": 8812
   },
   "flaresolverr": {
     "repo": "https://github.com/FlareSolverr/FlareSolverr",
@@ -197,7 +197,7 @@
     "latest_release_date": "2026-09-12",
     "status": "active",
     "description": "Proxy server to bypass Cloudflare protection",
-    "stars": 16269
+    "stars": 16274
   },
   "gitea": {
     "repo": "https://github.com/go-gitea/gitea",
@@ -207,7 +207,7 @@
     "latest_release_date": "2026-11-15",
     "status": "active",
     "description": "Git with a cup of tea! Painless self-hosted all-in-one software development service, including Git hosting, code review, team collaboration, package registry and CI/CD",
-    "stars": 59175
+    "stars": 59191
   },
   "grafana": {
     "repo": "https://github.com/grafana/grafana",
@@ -217,7 +217,7 @@
     "latest_release_date": "2026-11-10",
     "status": "active",
     "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more. ",
-    "stars": 78003
+    "stars": 78017
   },
   "halo": {
     "repo": "https://github.com/halo-dev/halo",
@@ -227,7 +227,7 @@
     "latest_release_date": "2026-11-13",
     "status": "active",
     "description": "Halo 是一款强大易用的开源建站工具，从个人博客、知识库，到企业官网、在线商城，Halo 都能助您轻松实现，一站式满足您的多样化建站需求。",
-    "stars": 40352
+    "stars": 40360
   },
   "hlink": {
     "repo": "https://github.com/likun7981/hlink",
@@ -247,7 +247,7 @@
     "latest_release_date": "2026-11-11",
     "status": "active",
     "description": "A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.",
-    "stars": 33744
+    "stars": 33762
   },
   "immich": {
     "repo": "https://github.com/immich-app/immich",
@@ -257,17 +257,17 @@
     "latest_release_date": "2026-11-18",
     "status": "active",
     "description": "High performance self-hosted photo and video management solution.",
-    "stars": 119666
+    "stars": 119734
   },
   "jackett": {
     "repo": "https://github.com/Jackett/Jackett",
-    "latest_tag": "v0.24.3082",
-    "latest_tag_date": "2026-11-18",
-    "latest_release": "v0.24.3082",
-    "latest_release_date": "2026-11-19",
+    "latest_tag": "v0.25.8",
+    "latest_tag_date": "2026-11-20",
+    "latest_release": "v0.25.8",
+    "latest_release_date": "2026-11-20",
     "status": "active",
     "description": "API Support for your favorite torrent trackers",
-    "stars": 16388
+    "stars": 16392
   },
   "jellyfin": {
     "repo": "https://github.com/nyanmisaka/jellyfin",
@@ -287,7 +287,7 @@
     "latest_release_date": "2026-07-05",
     "status": "active",
     "description": "Free Modern URL Shortener.",
-    "stars": 11213
+    "stars": 11214
   },
   "memos": {
     "repo": "https://github.com/usememos/memos",
@@ -297,7 +297,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Memos is an open-source, self-hosted note-taking app that brings your everyday thoughts together in a personal timeline. Your data stays yours, and you choose what to keep private or share.",
-    "stars": 64576
+    "stars": 64596
   },
   "metatube": {
     "repo": "https://github.com/metatube-community/jellyfin-plugin-metatube",
@@ -317,7 +317,7 @@
     "latest_release_date": "2026-11-11",
     "status": "active",
     "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
-    "stars": 35928
+    "stars": 35949
   },
   "music-tag": {
     "repo": "https://github.com/xhongc/music-tag-web",
@@ -327,7 +327,7 @@
     "latest_release_date": "",
     "status": "active",
     "description": "音乐标签编辑器，可编辑本地音乐文件的元数据, 音乐刮削。（Editable local music file metadata.）",
-    "stars": 6227
+    "stars": 6228
   },
   "neko": {
     "repo": "https://github.com/m1k1o/neko",
@@ -357,7 +357,7 @@
     "latest_release_date": "2026-10-18",
     "status": "active",
     "description": "A simple, secure, easy-to-use bastion and session auditing system. Supports RDP, SSH, VNC, Telnet, HTTP, records and replays sessions for auditing and compliance.",
-    "stars": 5681
+    "stars": 5682
   },
   "nginx-proxy-manager": {
     "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
@@ -367,7 +367,7 @@
     "latest_release_date": "2026-11-19",
     "status": "active",
     "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
-    "stars": 34813
+    "stars": 34834
   },
   "npm": {
     "repo": "https://github.com/NginxProxyManager/nginx-proxy-manager",
@@ -377,7 +377,7 @@
     "latest_release_date": "2026-11-19",
     "status": "active",
     "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
-    "stars": 34813
+    "stars": 34834
   },
   "ntfy": {
     "repo": "https://github.com/binwiederhier/ntfy",
@@ -387,7 +387,7 @@
     "latest_release_date": "2026-11-16",
     "status": "active",
     "description": "Send push notifications to your phone or desktop using PUT/POST",
-    "stars": 35649
+    "stars": 35664
   },
   "obsidian": {
     "repo": "https://github.com/Nystik-gh/ignis",
@@ -397,7 +397,7 @@
     "latest_release_date": "2026-11-04",
     "status": "active",
     "description": "Run Obsidian as a self-hosted web app. Not remote desktop, an actual web app.",
-    "stars": 1675
+    "stars": 1676
   },
   "obsidian-sync": {
     "repo": "https://github.com/haierkeys/fast-note-sync-service",
@@ -407,7 +407,7 @@
     "latest_release_date": "2026-08-14",
     "status": "active",
     "description": "High-performance, low-latency note synchronization, online management, and remote REST API service platform.",
-    "stars": 2574
+    "stars": 2575
   },
   "opengist": {
     "repo": "https://github.com/thomiceli/opengist",
@@ -417,7 +417,7 @@
     "latest_release_date": "2026-10-21",
     "status": "active",
     "description": "Self-hosted pastebin powered by Git, open-source alternative to Github Gist.",
-    "stars": 3414
+    "stars": 3413
   },
   "openlist": {
     "repo": "https://github.com/OpenListTeam/OpenList",
@@ -427,7 +427,7 @@
     "latest_release_date": "2026-11-19",
     "status": "active",
     "description": "A new AList Fork to Anti Trust Crisis",
-    "stars": 25716
+    "stars": 25732
   },
   "pairdrop": {
     "repo": "https://github.com/schlagmichdoch/PairDrop",
@@ -437,7 +437,7 @@
     "latest_release_date": "2025-02-24",
     "status": "active",
     "description": "PairDrop: Transfer Files Cross-Platform. No Setup, No Signup.",
-    "stars": 11846
+    "stars": 11855
   },
   "portainer": {
     "repo": "https://github.com/portainer/portainer",
@@ -447,7 +447,7 @@
     "latest_release_date": "2026-11-18",
     "status": "active",
     "description": "Making Docker and Kubernetes management easy.",
-    "stars": 38867
+    "stars": 38872
   },
   "prometheus": {
     "repo": "https://github.com/prometheus/prometheus",
@@ -457,7 +457,7 @@
     "latest_release_date": "2026-11-05",
     "status": "active",
     "description": "The Prometheus monitoring system and time series database.",
-    "stars": 67724
+    "stars": 67736
   },
   "prometheus-exporter": {
     "repo": "https://github.com/prometheus/node_exporter",
@@ -467,7 +467,7 @@
     "latest_release_date": "2026-11-19",
     "status": "active",
     "description": "Exporter for machine metrics",
-    "stars": 13942
+    "stars": 13946
   },
   "qbittorrent": {
     "repo": "https://github.com/linuxserver/docker-qbittorrent",
@@ -477,7 +477,7 @@
     "latest_release_date": "2026-11-08",
     "status": "active",
     "description": "",
-    "stars": 1776
+    "stars": 1777
   },
   "reader": {
     "repo": "https://github.com/hectorqin/reader",
@@ -497,7 +497,7 @@
     "latest_release_date": "2026-11-09",
     "status": "active",
     "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
-    "stars": 130284
+    "stars": 130495
   },
   "semaphore": {
     "repo": "https://github.com/semaphoreui/semaphore",
@@ -507,7 +507,7 @@
     "latest_release_date": "2026-11-10",
     "status": "active",
     "description": "Modern UI and powerful API for Ansible, Terraform/OpenTofu/Terragrunt, PowerShell and other DevOps tools.",
-    "stars": 14430
+    "stars": 14437
   },
   "shadowsocks-rust-client": {
     "repo": "https://github.com/shadowsocks/shadowsocks-rust",
@@ -517,7 +517,7 @@
     "latest_release_date": "2026-08-26",
     "status": "active",
     "description": "A Rust port of shadowsocks",
-    "stars": 10987
+    "stars": 10989
   },
   "shadowsocks-rust-server": {
     "repo": "https://github.com/shadowsocks/shadowsocks-rust",
@@ -527,17 +527,17 @@
     "latest_release_date": "2026-08-26",
     "status": "active",
     "description": "A Rust port of shadowsocks",
-    "stars": 10987
+    "stars": 10989
   },
   "snappymail": {
     "repo": "https://github.com/the-djmaze/snappymail",
-    "latest_tag": "v3.1.3",
-    "latest_tag_date": "2026-11-18",
-    "latest_release": "v3.1.3",
-    "latest_release_date": "2026-11-18",
+    "latest_tag": "v3.1.4",
+    "latest_tag_date": "2026-11-20",
+    "latest_release": "v3.1.4",
+    "latest_release_date": "2026-11-20",
     "status": "active",
     "description": "Simple, modern \u0026 fast web-based email client",
-    "stars": 1759
+    "stars": 1761
   },
   "sslocal": {
     "repo": "https://github.com/shadowsocks/shadowsocks-rust",
@@ -547,7 +547,7 @@
     "latest_release_date": "2026-08-26",
     "status": "active",
     "description": "A Rust port of shadowsocks",
-    "stars": 10987
+    "stars": 10989
   },
   "steam-headless": {
     "repo": "https://github.com/Steam-Headless/docker-steam-headless",
@@ -567,7 +567,7 @@
     "latest_release_date": "2026-06-12",
     "status": "active",
     "description": " Swing Music is a beautiful, self-hosted music player for your local audio files. Like a cooler Spotify ... but bring your own music.",
-    "stars": 2093
+    "stars": 2095
   },
   "syncthing": {
     "repo": "https://github.com/syncthing/syncthing",
@@ -577,7 +577,7 @@
     "latest_release_date": "2026-10-21",
     "status": "active",
     "description": "Open Source Continuous File Synchronization",
-    "stars": 90608
+    "stars": 90645
   },
   "talebook": {
     "repo": "https://github.com/talebook/talebook",
@@ -587,7 +587,7 @@
     "latest_release_date": "2026-10-18",
     "status": "active",
     "description": "一个简单好用的个人书库",
-    "stars": 5912
+    "stars": 5914
   },
   "taosync": {
     "repo": "https://github.com/dr34m-cn/taosync",
@@ -597,7 +597,7 @@
     "latest_release_date": "2026-11-17",
     "status": "active",
     "description": "TaoSync 是一个支持内置存储引擎与 OpenList/AList v3+ 的自动化同步工具/TaoSync is an automated synchronization tool with a built-in storage engine and support for OpenList/AList v3+.",
-    "stars": 1571
+    "stars": 1572
   },
   "transmission": {
     "repo": "https://github.com/transmission/transmission",
@@ -607,7 +607,7 @@
     "latest_release_date": "2026-10-24",
     "status": "active",
     "description": "Official Transmission BitTorrent client repository",
-    "stars": 15439
+    "stars": 15444
   },
   "upsnap": {
     "repo": "https://github.com/seriousm4x/UpSnap",
@@ -617,7 +617,7 @@
     "latest_release_date": "2026-11-06",
     "status": "active",
     "description": "A simple wake on lan web app written with SvelteKit, Go and PocketBase.",
-    "stars": 6443
+    "stars": 6446
   },
   "uptime-kuma": {
     "repo": "https://github.com/louislam/uptime-kuma",
@@ -627,7 +627,7 @@
     "latest_release_date": "2026-11-17",
     "status": "active",
     "description": "A fancy self-hosted monitoring tool",
-    "stars": 94655
+    "stars": 94712
   },
   "vaultwarden": {
     "repo": "https://github.com/dani-garcia/vaultwarden",
@@ -637,7 +637,7 @@
     "latest_release_date": "2026-11-01",
     "status": "active",
     "description": "Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs",
-    "stars": 71024
+    "stars": 71078
   },
   "zerotier": {
     "repo": "https://github.com/zerotier/ZeroTierOne",
@@ -647,6 +647,6 @@
     "latest_release_date": "2026-05-28",
     "status": "active",
     "description": "A Smart Ethernet Switch for Earth",
-    "stars": 17273
+    "stars": 17275
   }
 }
